@@ -20,13 +20,10 @@ class App {
 
   private mongoSetup(): void {
     mongoose.connect(serverConfig.mongoDB, { useNewUrlParser: true });
-
     const db = mongoose.connection;
     db.on('error', console.error.bind(console, 'connection error:'));
-    db.once('open', function () {
-      console.log(`Connecting MongoDB successfully.`);
-    });
-  
+    db.once('open', () => console.log(`Connecting MongoDB successfully.`));
+
   }
 
 }
