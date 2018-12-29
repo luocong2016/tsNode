@@ -8,3 +8,9 @@ entity | 这里存放的是所有的实体定义（使用了sequelize进行数�
 models | 使用来自entity中的实体进行sequelize来完成初始化的操作，并将sequelize对象抛出。
 utils | 存放的各种日常开发中提炼出来的公共函数
 types | 存放了各种客制化的复合类型的定义，各种结构、属性、方法返回值的定义（目前包括常用的Promise版redis与qconf）
+
+
+```
+https://github.com/dalenguyen/rest-api-node-typescript/blob/master/lib/app.ts
+https://github.com/Talento90/typescript-node
+```
